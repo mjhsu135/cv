@@ -34,8 +34,10 @@ position_data <- read_csv('positions.csv') %>%
   mutate(
     # Build some custom sections by collapsing others
     section = case_when(
-      section %in% c('volunteer_work','teaching_positions') ~ 'work', 
+      section %in% c('volunteer_work') ~ 'volunteering', 
+      section %in% c('teaching_positions') ~ 'teaching' ,
       section %in% c('achievements') ~ 'achievements',
+      section %in% c('skills') ~ 'skills',
       TRUE ~ section
     )
   ) 
@@ -47,7 +49,7 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](stats.png){width=100%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -139,27 +141,33 @@ position_data %>% print_section('education')
 
 
 
-Selected Positions {data-icon=suitcase}
+Teaching Positions {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('teaching_positions')
+position_data %>% print_section('teaching')
 ```
 
-Selected Writing {data-icon=newspaper}
+Volunteer Work {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-position_data %>% print_section('volunteer_work')
+position_data %>% print_section('volunteering')
 ```
 
-Selected Writing {data-icon=star}
+Achievements {data-icon=star}
 --------------------------------------------------------------------------------
 
 
 ```{r}
 position_data %>% print_section('achievements')
 ```
+Creative Skills {data-icon=camera}
+--------------------------------------------------------------------------------
 
+
+```{r}
+position_data %>% print_section('skills')
+```
 
