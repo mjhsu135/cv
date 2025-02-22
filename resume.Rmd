@@ -57,7 +57,7 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> michel48@asu.edu
 - <i class="fa fa-github"></i> github.com/mjhsu135
 - <i class="fa fa-link"></i> [michellehsu.me](https://mjhsu135.github.io/)
-- <i class="fa fa-phone"></i> (916) 605-6863
+- <i class="fa fa-phone"></i> (123) 456-7890
 
 
 
@@ -95,7 +95,7 @@ All projects available at `github.com/nstrayer/<name>`
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+See full CV at michellehsu.me/cv for more complete list of positions and publications.
 
 
 Disclaimer {#disclaimer}
