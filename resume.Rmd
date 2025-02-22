@@ -143,7 +143,7 @@ Selected Positions {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('positions')
+position_data %>% print_section('teaching_positions')
 ```
 
 Selected Writing {data-icon=newspaper}
@@ -151,7 +151,15 @@ Selected Writing {data-icon=newspaper}
 
 
 ```{r}
-position_data %>% print_section('writings')
+position_data %>% print_section('volunteer_work')
+```
+
+Selected Writing {data-icon=star}
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('achievements')
 ```
 
 
